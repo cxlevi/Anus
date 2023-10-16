@@ -1,13 +1,23 @@
 #include "MyForm.h"
 
-using namespace System; // Указывает пространство имен для использования  
-using namespace System::Windows::Forms; // Указывает пространство имен для Windows Forms  
+using namespace System; // РЈРєР°Р·С‹РІР°РµС‚ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РёРјРµРЅ РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ  
+using namespace System::Windows::Forms; // РЈРєР°Р·С‹РІР°РµС‚ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РёРјРµРЅ РґР»СЏ Windows Forms  
 
-[STAThreadAttribute] // позволяет работать с текстом  
+[STAThreadAttribute] // РїРѕР·РІРѕР»СЏРµС‚ СЂР°Р±РѕС‚Р°С‚СЊ СЃ С‚РµРєСЃС‚РѕРј  
 
-int main(array<String^>^ args) { // Точка входа в приложение, принимает массив строк в качестве аргументов  
-    Application::SetCompatibleTextRenderingDefault(false); // Устанавливает совместимость с отображением текста по умолчанию в значение false  
-    Application::EnableVisualStyles(); // Включает визуальные стили для приложения  
-    Project5::MyForm form; // Создает экземпляр класса MyForm из пространства имен Project5(Project5 - название проекта)  
-    Application::Run(% form); // Запускает приложение и запускает основной цикл обработки сообщений для указанной формы  
+int main(array<String^>^ args) { // РўРѕС‡РєР° РІС…РѕРґР° РІ РїСЂРёР»РѕР¶РµРЅРёРµ, РїСЂРёРЅРёРјР°РµС‚ РјР°СЃСЃРёРІ СЃС‚СЂРѕРє РІ РєР°С‡РµСЃС‚РІРµ Р°СЂРіСѓРјРµРЅС‚РѕРІ  
+    Application::SetCompatibleTextRenderingDefault(false); // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚СЊ СЃ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµРј С‚РµРєСЃС‚Р° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РІ Р·РЅР°С‡РµРЅРёРµ false  
+    Application::EnableVisualStyles(); // Р’РєР»СЋС‡Р°РµС‚ РІРёР·СѓР°Р»СЊРЅС‹Рµ СЃС‚РёР»Рё РґР»СЏ РїСЂРёР»РѕР¶РµРЅРёСЏ  
+    Project5::MyForm form; // РЎРѕР·РґР°РµС‚ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° MyForm РёР· РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР° РёРјРµРЅ Project5(Project5 - РЅР°Р·РІР°РЅРёРµ РїСЂРѕРµРєС‚Р°)  
+    Application::Run(% form); // Р—Р°РїСѓСЃРєР°РµС‚ РїСЂРёР»РѕР¶РµРЅРёРµ Рё Р·Р°РїСѓСЃРєР°РµС‚ РѕСЃРЅРѕРІРЅРѕР№ С†РёРєР» РѕР±СЂР°Р±РѕС‚РєРё СЃРѕРѕР±С‰РµРЅРёР№ РґР»СЏ СѓРєР°Р·Р°РЅРЅРѕР№ С„РѕСЂРјС‹  
+}
+
+Project5::MyForm::MyForm(void)
+{
+    throw gcnew System::NotImplementedException();
+}
+
+Project5::MyForm::MyForm(void) {
+
+
 }
