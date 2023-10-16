@@ -49,8 +49,23 @@ namespace Project5 {
 
 	private: System::Windows::Forms::Button^ btn_Заметки;
 	private: System::Windows::Forms::Button^ btn_СписокДел;
-	private: System::Windows::Forms::ToolStripMenuItem^ цветToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ цветТекстаToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ BG_colorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ Text_colorToolStripMenuItem;
+
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^ красныйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ желтыйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ зеленыйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ синийToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ черныйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ белыйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ красныйToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ желтыйToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ зеленыйToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ синийToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ черныйToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ белыйToolStripMenuItem1;
 
 
 
@@ -77,11 +92,23 @@ namespace Project5 {
 			this->ЗаметкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->СписокДелToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->настройкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->BG_colorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->красныйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->желтыйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->зеленыйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->синийToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->черныйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->белыйToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Text_colorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->красныйToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->желтыйToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->зеленыйToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->синийToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->черныйToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->белыйToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->LB_СписокДел = (gcnew System::Windows::Forms::ListBox());
 			this->btn_Заметки = (gcnew System::Windows::Forms::Button());
 			this->btn_СписокДел = (gcnew System::Windows::Forms::Button());
-			this->цветToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->цветТекстаToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -127,27 +154,134 @@ namespace Project5 {
 			// ЗаметкиToolStripMenuItem
 			// 
 			this->ЗаметкиToolStripMenuItem->Name = L"ЗаметкиToolStripMenuItem";
-			this->ЗаметкиToolStripMenuItem->Size = System::Drawing::Size(137, 22);
+			this->ЗаметкиToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->ЗаметкиToolStripMenuItem->Text = L"Заметки";
 			this->ЗаметкиToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ЗаметкиToolStripMenuItem_Click);
 			// 
 			// СписокДелToolStripMenuItem
 			// 
 			this->СписокДелToolStripMenuItem->Name = L"СписокДелToolStripMenuItem";
-			this->СписокДелToolStripMenuItem->Size = System::Drawing::Size(137, 22);
+			this->СписокДелToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->СписокДелToolStripMenuItem->Text = L"Список дел";
 			this->СписокДелToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::СписокДелToolStripMenuItem_Click);
 			// 
 			// настройкиToolStripMenuItem
 			// 
 			this->настройкиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->цветToolStripMenuItem,
-					this->цветТекстаToolStripMenuItem
+				this->BG_colorToolStripMenuItem,
+					this->Text_colorToolStripMenuItem
 			});
 			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
 			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
 			this->настройкиToolStripMenuItem->Text = L"Настройки";
 			this->настройкиToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::настройкиToolStripMenuItem_Click);
+			// 
+			// BG_colorToolStripMenuItem
+			// 
+			this->BG_colorToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->красныйToolStripMenuItem,
+					this->желтыйToolStripMenuItem, this->зеленыйToolStripMenuItem, this->синийToolStripMenuItem, this->черныйToolStripMenuItem, this->белыйToolStripMenuItem
+			});
+			this->BG_colorToolStripMenuItem->Name = L"BG_colorToolStripMenuItem";
+			this->BG_colorToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->BG_colorToolStripMenuItem->Text = L"Цвет фона";
+			this->BG_colorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::BG_colorToolStripMenuItem_Click);
+			// 
+			// красныйToolStripMenuItem
+			// 
+			this->красныйToolStripMenuItem->Name = L"красныйToolStripMenuItem";
+			this->красныйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->красныйToolStripMenuItem->Text = L"Красный";
+			this->красныйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::красныйToolStripMenuItem_Click);
+			// 
+			// желтыйToolStripMenuItem
+			// 
+			this->желтыйToolStripMenuItem->Name = L"желтыйToolStripMenuItem";
+			this->желтыйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->желтыйToolStripMenuItem->Text = L"Желтый";
+			this->желтыйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::желтыйToolStripMenuItem_Click);
+			// 
+			// зеленыйToolStripMenuItem
+			// 
+			this->зеленыйToolStripMenuItem->Name = L"зеленыйToolStripMenuItem";
+			this->зеленыйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->зеленыйToolStripMenuItem->Text = L"Зеленый";
+			this->зеленыйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::зеленыйToolStripMenuItem_Click);
+			// 
+			// синийToolStripMenuItem
+			// 
+			this->синийToolStripMenuItem->Name = L"синийToolStripMenuItem";
+			this->синийToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->синийToolStripMenuItem->Text = L"Синий";
+			this->синийToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::синийToolStripMenuItem_Click);
+			// 
+			// черныйToolStripMenuItem
+			// 
+			this->черныйToolStripMenuItem->Name = L"черныйToolStripMenuItem";
+			this->черныйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->черныйToolStripMenuItem->Text = L"Черный";
+			this->черныйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::черныйToolStripMenuItem_Click);
+			// 
+			// белыйToolStripMenuItem
+			// 
+			this->белыйToolStripMenuItem->Name = L"белыйToolStripMenuItem";
+			this->белыйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->белыйToolStripMenuItem->Text = L"Белый";
+			this->белыйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::белыйToolStripMenuItem_Click);
+			// 
+			// Text_colorToolStripMenuItem
+			// 
+			this->Text_colorToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->красныйToolStripMenuItem1,
+					this->желтыйToolStripMenuItem1, this->зеленыйToolStripMenuItem1, this->синийToolStripMenuItem1, this->черныйToolStripMenuItem1,
+					this->белыйToolStripMenuItem1
+			});
+			this->Text_colorToolStripMenuItem->Name = L"Text_colorToolStripMenuItem";
+			this->Text_colorToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->Text_colorToolStripMenuItem->Text = L"Цвет текста";
+			this->Text_colorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Text_colorToolStripMenuItem_Click);
+			// 
+			// красныйToolStripMenuItem1
+			// 
+			this->красныйToolStripMenuItem1->Name = L"красныйToolStripMenuItem1";
+			this->красныйToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->красныйToolStripMenuItem1->Text = L"Красный";
+			this->красныйToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::красныйToolStripMenuItem1_Click);
+			// 
+			// желтыйToolStripMenuItem1
+			// 
+			this->желтыйToolStripMenuItem1->Name = L"желтыйToolStripMenuItem1";
+			this->желтыйToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->желтыйToolStripMenuItem1->Text = L"Желтый";
+			this->желтыйToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::желтыйToolStripMenuItem1_Click);
+			// 
+			// зеленыйToolStripMenuItem1
+			// 
+			this->зеленыйToolStripMenuItem1->Name = L"зеленыйToolStripMenuItem1";
+			this->зеленыйToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->зеленыйToolStripMenuItem1->Text = L"Зеленый";
+			this->зеленыйToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::зеленыйToolStripMenuItem1_Click);
+			// 
+			// синийToolStripMenuItem1
+			// 
+			this->синийToolStripMenuItem1->Name = L"синийToolStripMenuItem1";
+			this->синийToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->синийToolStripMenuItem1->Text = L"Синий";
+			this->синийToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::синийToolStripMenuItem1_Click);
+			// 
+			// черныйToolStripMenuItem1
+			// 
+			this->черныйToolStripMenuItem1->Name = L"черныйToolStripMenuItem1";
+			this->черныйToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->черныйToolStripMenuItem1->Text = L"Черный";
+			this->черныйToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::черныйToolStripMenuItem1_Click);
+			// 
+			// белыйToolStripMenuItem1
+			// 
+			this->белыйToolStripMenuItem1->Name = L"белыйToolStripMenuItem1";
+			this->белыйToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->белыйToolStripMenuItem1->Text = L"Белый";
+			this->белыйToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::белыйToolStripMenuItem1_Click);
 			// 
 			// LB_СписокДел
 			// 
@@ -182,18 +316,6 @@ namespace Project5 {
 			this->btn_СписокДел->Visible = false;
 			this->btn_СписокДел->Click += gcnew System::EventHandler(this, &MyForm::btn_СписокДел_Click);
 			// 
-			// цветToolStripMenuItem
-			// 
-			this->цветToolStripMenuItem->Name = L"цветToolStripMenuItem";
-			this->цветToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->цветToolStripMenuItem->Text = L"Цвет фона";
-			// 
-			// цветТекстаToolStripMenuItem
-			// 
-			this->цветТекстаToolStripMenuItem->Name = L"цветТекстаToolStripMenuItem";
-			this->цветТекстаToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->цветТекстаToolStripMenuItem->Text = L"Цвет текста";
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -219,7 +341,6 @@ namespace Project5 {
 private: textBox_Appear();
 private: CheckBox_Appear();
 
-
 private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void менюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void ЗаметкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
@@ -227,9 +348,29 @@ private: System::Void СписокДелToolStripMenuItem_Click(System::Object^ 
 private: System::Void настройкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void btn_Заметки_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void btn_СписокДел_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void BG_colorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void Text_colorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+
+private: System::Void красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void желтыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void черныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+
+private: System::Void красныйToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void желтыйToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void зеленыйToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void синийToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void черныйToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void белыйToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
+
 
 private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	   }
+
+
+
 
 
 };
