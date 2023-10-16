@@ -10,22 +10,17 @@ namespace Project5 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
-		}
+		MyForm(void);
+		
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -34,128 +29,165 @@ namespace Project5 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::ListBox^ LB_Р—Р°РјРµС‚РєРё;
+	protected:
+
 
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ выходToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ менюToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ простыеЗамететкиToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ РІС‹С…РѕРґToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ РјРµРЅСЋToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ Р—Р°РјРµС‚РєРёToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem;
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^ деловыеЗаметкToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ настройкиToolStripMenuItem;
-	private: System::Windows::Forms::ListBox^ listBox2;
-	private: System::Windows::Forms::ListBox^ listBox3;
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^ РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem;
+	private: System::Windows::Forms::ListBox^ LB_РЎРїРёСЃРѕРєР”РµР»;
+	private: System::Windows::Forms::ListBox^ LB_РќР°СЃС‚СЂРѕР№РєРё;
+
+
+	private: System::Windows::Forms::Button^ btn_Р—Р°РјРµС‚РєРё;
+	private: System::Windows::Forms::Button^ btn_РЎРїРёСЃРѕРєР”РµР»;
 
 
 	protected:
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->LB_Р—Р°РјРµС‚РєРё = (gcnew System::Windows::Forms::ListBox());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->выходToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->менюToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->простыеЗамететкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->деловыеЗаметкToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->настройкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->listBox2 = (gcnew System::Windows::Forms::ListBox());
-			this->listBox3 = (gcnew System::Windows::Forms::ListBox());
+			this->РІС‹С…РѕРґToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->РјРµРЅСЋToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->Р—Р°РјРµС‚РєРёToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->LB_РЎРїРёСЃРѕРєР”РµР» = (gcnew System::Windows::Forms::ListBox());
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё = (gcnew System::Windows::Forms::ListBox());
+			this->btn_Р—Р°РјРµС‚РєРё = (gcnew System::Windows::Forms::Button());
+			this->btn_РЎРїРёСЃРѕРєР”РµР» = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// listBox1
+			// LB_Р—Р°РјРµС‚РєРё
 			// 
-			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(30, 51);
-			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(317, 316);
-			this->listBox1->TabIndex = 0;
-			this->listBox1->Visible = false;
+			this->LB_Р—Р°РјРµС‚РєРё->FormattingEnabled = true;
+			this->LB_Р—Р°РјРµС‚РєРё->Location = System::Drawing::Point(12, 27);
+			this->LB_Р—Р°РјРµС‚РєРё->Name = L"LB_Р—Р°РјРµС‚РєРё";
+			this->LB_Р—Р°РјРµС‚РєРё->Size = System::Drawing::Size(369, 602);
+			this->LB_Р—Р°РјРµС‚РєРё->TabIndex = 0;
+			this->LB_Р—Р°РјРµС‚РєРё->Visible = false;
 			// 
 			// menuStrip1
 			// 
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->выходToolStripMenuItem,
-					this->менюToolStripMenuItem, this->настройкиToolStripMenuItem
+				this->РІС‹С…РѕРґToolStripMenuItem,
+					this->РјРµРЅСЋToolStripMenuItem, this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(415, 24);
+			this->menuStrip1->Size = System::Drawing::Size(1210, 24);
 			this->menuStrip1->TabIndex = 2;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
-			// выходToolStripMenuItem
+			// РІС‹С…РѕРґToolStripMenuItem
 			// 
-			this->выходToolStripMenuItem->Name = L"выходToolStripMenuItem";
-			this->выходToolStripMenuItem->Size = System::Drawing::Size(54, 20);
-			this->выходToolStripMenuItem->Text = L"Выход";
+			this->РІС‹С…РѕРґToolStripMenuItem->Name = L"РІС‹С…РѕРґToolStripMenuItem";
+			this->РІС‹С…РѕРґToolStripMenuItem->Size = System::Drawing::Size(54, 20);
+			this->РІС‹С…РѕРґToolStripMenuItem->Text = L"Р’С‹С…РѕРґ";
+			this->РІС‹С…РѕРґToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::РІС‹С…РѕРґToolStripMenuItem_Click);
 			// 
-			// менюToolStripMenuItem
+			// РјРµРЅСЋToolStripMenuItem
 			// 
-			this->менюToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->простыеЗамететкиToolStripMenuItem,
-					this->деловыеЗаметкToolStripMenuItem
+			this->РјРµРЅСЋToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->Р—Р°РјРµС‚РєРёToolStripMenuItem,
+					this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem
 			});
-			this->менюToolStripMenuItem->Name = L"менюToolStripMenuItem";
-			this->менюToolStripMenuItem->Size = System::Drawing::Size(53, 20);
-			this->менюToolStripMenuItem->Text = L"Меню";
+			this->РјРµРЅСЋToolStripMenuItem->Name = L"РјРµРЅСЋToolStripMenuItem";
+			this->РјРµРЅСЋToolStripMenuItem->Size = System::Drawing::Size(53, 20);
+			this->РјРµРЅСЋToolStripMenuItem->Text = L"РњРµРЅСЋ";
+			this->РјРµРЅСЋToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::РјРµРЅСЋToolStripMenuItem_Click);
 			// 
-			// простыеЗамететкиToolStripMenuItem
+			// Р—Р°РјРµС‚РєРёToolStripMenuItem
 			// 
-			this->простыеЗамететкиToolStripMenuItem->Name = L"простыеЗамететкиToolStripMenuItem";
-			this->простыеЗамететкиToolStripMenuItem->Size = System::Drawing::Size(170, 22);
-			this->простыеЗамететкиToolStripMenuItem->Text = L"Простые заметки";
+			this->Р—Р°РјРµС‚РєРёToolStripMenuItem->Name = L"Р—Р°РјРµС‚РєРёToolStripMenuItem";
+			this->Р—Р°РјРµС‚РєРёToolStripMenuItem->Size = System::Drawing::Size(137, 22);
+			this->Р—Р°РјРµС‚РєРёToolStripMenuItem->Text = L"Р—Р°РјРµС‚РєРё";
+			this->Р—Р°РјРµС‚РєРёToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::Р—Р°РјРµС‚РєРёToolStripMenuItem_Click);
 			// 
-			// деловыеЗаметкToolStripMenuItem
+			// РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem
 			// 
-			this->деловыеЗаметкToolStripMenuItem->Name = L"деловыеЗаметкToolStripMenuItem";
-			this->деловыеЗаметкToolStripMenuItem->Size = System::Drawing::Size(170, 22);
-			this->деловыеЗаметкToolStripMenuItem->Text = L"Список дел";
+			this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem->Name = L"РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem";
+			this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem->Size = System::Drawing::Size(137, 22);
+			this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem->Text = L"РЎРїРёСЃРѕРє РґРµР»";
+			this->РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem_Click);
 			// 
-			// настройкиToolStripMenuItem
+			// РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem
 			// 
-			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
-			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
-			this->настройкиToolStripMenuItem->Text = L"Настройки";
+			this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem->Name = L"РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem";
+			this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem->Size = System::Drawing::Size(79, 20);
+			this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem->Text = L"РќР°СЃС‚СЂРѕР№РєРё";
+			this->РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem_Click);
 			// 
-			// listBox2
+			// LB_РЎРїРёСЃРѕРєР”РµР»
 			// 
-			this->listBox2->FormattingEnabled = true;
-			this->listBox2->Location = System::Drawing::Point(43, 113);
-			this->listBox2->Name = L"listBox2";
-			this->listBox2->Size = System::Drawing::Size(120, 95);
-			this->listBox2->TabIndex = 4;
-			this->listBox2->Visible = false;
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->FormattingEnabled = true;
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->Location = System::Drawing::Point(416, 27);
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->Name = L"LB_РЎРїРёСЃРѕРєР”РµР»";
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->Size = System::Drawing::Size(326, 407);
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->TabIndex = 4;
+			this->LB_РЎРїРёСЃРѕРєР”РµР»->Visible = false;
 			// 
-			// listBox3
+			// LB_РќР°СЃС‚СЂРѕР№РєРё
 			// 
-			this->listBox3->FormattingEnabled = true;
-			this->listBox3->Location = System::Drawing::Point(193, 113);
-			this->listBox3->Name = L"listBox3";
-			this->listBox3->Size = System::Drawing::Size(120, 95);
-			this->listBox3->TabIndex = 5;
-			this->listBox3->Visible = false;
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->FormattingEnabled = true;
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->Location = System::Drawing::Point(778, 27);
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->Name = L"LB_РќР°СЃС‚СЂРѕР№РєРё";
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->Size = System::Drawing::Size(326, 407);
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->TabIndex = 5;
+			this->LB_РќР°СЃС‚СЂРѕР№РєРё->Visible = false;
+			// 
+			// btn_Р—Р°РјРµС‚РєРё
+			// 
+			this->btn_Р—Р°РјРµС‚РєРё->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25.25F));
+			this->btn_Р—Р°РјРµС‚РєРё->Location = System::Drawing::Point(321, 568);
+			this->btn_Р—Р°РјРµС‚РєРё->Name = L"btn_Р—Р°РјРµС‚РєРё";
+			this->btn_Р—Р°РјРµС‚РєРё->Size = System::Drawing::Size(50, 50);
+			this->btn_Р—Р°РјРµС‚РєРё->TabIndex = 6;
+			this->btn_Р—Р°РјРµС‚РєРё->Text = L"+";
+			this->btn_Р—Р°РјРµС‚РєРё->UseVisualStyleBackColor = true;
+			// 
+			// btn_РЎРїРёСЃРѕРєР”РµР»
+			// 
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25.25F));
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->Location = System::Drawing::Point(678, 374);
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->Name = L"btn_РЎРїРёСЃРѕРєР”РµР»";
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->Size = System::Drawing::Size(50, 50);
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->TabIndex = 7;
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->Text = L"+";
+			this->btn_РЎРїРёСЃРѕРєР”РµР»->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(415, 400);
-			this->Controls->Add(this->listBox3);
-			this->Controls->Add(this->listBox2);
-			this->Controls->Add(this->listBox1);
+			this->ClientSize = System::Drawing::Size(1210, 773);
+			this->Controls->Add(this->btn_РЎРїРёСЃРѕРєР”РµР»);
+			this->Controls->Add(this->btn_Р—Р°РјРµС‚РєРё);
+			this->Controls->Add(this->LB_РќР°СЃС‚СЂРѕР№РєРё);
+			this->Controls->Add(this->LB_РЎРїРёСЃРѕРєР”РµР»);
+			this->Controls->Add(this->LB_Р—Р°РјРµС‚РєРё);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
@@ -167,152 +199,21 @@ namespace Project5 {
 
 		}
 #pragma endregion
-	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
-	}
-
-};
-}
-#pragma once
-
-namespace Project5 {
-
-	using namespace System;
-	using namespace System::ComponentModel;
-	using namespace System::Collections;
-	using namespace System::Windows::Forms;
-	using namespace System::Data;
-	using namespace System::Drawing;
-
-	/// <summary>
-	/// Сводка для MyForm
-	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
-	{
-	public:
-		MyForm(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
-		}
-
-	protected:
-		/// <summary>
-		/// Освободить все используемые ресурсы.
-		/// </summary>
-		~MyForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
-	private: System::Windows::Forms::ListBox^ listBox1;
-
-	private: System::Windows::Forms::MenuStrip^ menuStrip1;
-	private: System::Windows::Forms::ToolStripMenuItem^ выходToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ менюToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ простыеЗамететкиToolStripMenuItem;
+private: textBox_Appear();
+private: CheckBox_Appear();
+private: LB_Р—Р°РјРµС‚РєРё_Visible();
+private: LB_РЎРїРёСЃРѕРєР”РµР»_Visible();
+private: LB_РќР°СЃС‚СЂРѕР№РєРё_Visible();
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^ деловыеЗаметкToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ настройкиToolStripMenuItem;
-	private: System::Windows::Forms::ListBox^ listBox2;
-	private: System::Windows::Forms::ListBox^ listBox3;
+private: System::Void РІС‹С…РѕРґToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void РјРµРЅСЋToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void Р—Р°РјРµС‚РєРёToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void РЎРїРёСЃРѕРєР”РµР»ToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void РЅР°СЃС‚СЂРѕР№РєРёToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
 
-	protected:
-
-	private:
-		/// <summary>
-		/// Обязательная переменная конструктора.
-		/// </summary>
-		System::ComponentModel::Container ^components;
-
-#pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
-		/// </summary>
-		void InitializeComponent(void)
-		{
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->выходToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->менюToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->простыеЗамететкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->деловыеЗаметкToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->настройкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->listBox2 = (gcnew System::Windows::Forms::ListBox());
-			this->listBox3 = (gcnew System::Windows::Forms::ListBox());
-			this->menuStrip1->SuspendLayout();
-			this->SuspendLayout();
-			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(30, 51);
-			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(317, 316);
-			this->listBox1->TabIndex = 0;
-			this->listBox1->Visible = false;
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->выходToolStripMenuItem,
-					this->менюToolStripMenuItem, this->настройкиToolStripMenuItem
-			});
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
-			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(415, 24);
-			this->menuStrip1->TabIndex = 2;
-			this->menuStrip1->Text = L"menuStrip1";
-			this->выходToolStripMenuItem->Name = L"выходToolStripMenuItem";
-			this->выходToolStripMenuItem->Size = System::Drawing::Size(54, 20);
-			this->выходToolStripMenuItem->Text = L"Выход";
-			this->менюToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->простыеЗамететкиToolStripMenuItem,
-					this->деловыеЗаметкToolStripMenuItem
-			});
-			this->менюToolStripMenuItem->Name = L"менюToolStripMenuItem";
-			this->менюToolStripMenuItem->Size = System::Drawing::Size(53, 20);
-			this->менюToolStripMenuItem->Text = L"Меню";
-			this->простыеЗамететкиToolStripMenuItem->Name = L"простыеЗамететкиToolStripMenuItem";
-			this->простыеЗамететкиToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->простыеЗамететкиToolStripMenuItem->Text = L"Простые заметки";
-			this->деловыеЗаметкToolStripMenuItem->Name = L"деловыеЗаметкToolStripMenuItem";
-			this->деловыеЗаметкToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->деловыеЗаметкToolStripMenuItem->Text = L"Список дел";
-			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
-			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
-			this->настройкиToolStripMenuItem->Text = L"Настройки";
-			this->listBox2->FormattingEnabled = true;
-			this->listBox2->Location = System::Drawing::Point(42, 118);
-			this->listBox2->Name = L"listBox2";
-			this->listBox2->Size = System::Drawing::Size(120, 95);
-			this->listBox2->TabIndex = 4;
-			this->listBox2->Visible = false;
-			this->listBox3->FormattingEnabled = true;
-			this->listBox3->Location = System::Drawing::Point(204, 176);
-			this->listBox3->Name = L"listBox3";
-			this->listBox3->Size = System::Drawing::Size(120, 95);
-			this->listBox3->TabIndex = 5;
-			this->listBox3->Visible = false;
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(415, 400);
-			this->Controls->Add(this->listBox3);
-			this->Controls->Add(this->listBox2);
-			this->Controls->Add(this->listBox1);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
-			this->menuStrip1->ResumeLayout(false);
-			this->menuStrip1->PerformLayout();
-			this->ResumeLayout(false);
-			this->PerformLayout();
-
-		}
-#pragma endregion
-	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
-	}
-
+private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+	   }
 };
 }
