@@ -62,7 +62,7 @@ System::Void Project5::MyForm::менюToolStripMenuItem_Click(System::Object^ s
 System::Void Project5::MyForm::ЗаметкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
 }
- System::Void Project5::MyForm:: СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+ System::Void Project5::MyForm::СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
 }
 System::Void Project5::MyForm::настройкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -73,4 +73,17 @@ System::Void Project5::MyForm::btn_Заметки_Click(System::Object^ sender, 
 }
 System::Void Project5::MyForm::btn_СписокДел_Click(System::Object^ sender, System::EventArgs^ e) {
     CheckBox_Appear();
+}
+
+System::Void Project5::MyForm::красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+}
+System::Void Project5::MyForm::желтыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+}
+System::Void Project5::MyForm::зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+}
+System::Void Project5::MyForm::синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+}
+System::Void Project5::MyForm::черныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+}
+System::Void Project5::MyForm::белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
 }
