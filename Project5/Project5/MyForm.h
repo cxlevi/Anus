@@ -44,11 +44,15 @@ namespace Project5 {
 
 	private: System::Windows::Forms::ToolStripMenuItem^ настройкиToolStripMenuItem;
 	private: System::Windows::Forms::ListBox^ LB_СписокДел;
-	private: System::Windows::Forms::ListBox^ LB_Настройки;
+
 
 
 	private: System::Windows::Forms::Button^ btn_Заметки;
 	private: System::Windows::Forms::Button^ btn_СписокДел;
+	private: System::Windows::Forms::ToolStripMenuItem^ цветToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ цветТекстаToolStripMenuItem;
+
+
 
 
 	protected:
@@ -74,9 +78,10 @@ namespace Project5 {
 			this->СписокДелToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->настройкиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->LB_СписокДел = (gcnew System::Windows::Forms::ListBox());
-			this->LB_Настройки = (gcnew System::Windows::Forms::ListBox());
 			this->btn_Заметки = (gcnew System::Windows::Forms::Button());
 			this->btn_СписокДел = (gcnew System::Windows::Forms::Button());
+			this->цветToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->цветТекстаToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -135,6 +140,10 @@ namespace Project5 {
 			// 
 			// настройкиToolStripMenuItem
 			// 
+			this->настройкиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->цветToolStripMenuItem,
+					this->цветТекстаToolStripMenuItem
+			});
 			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
 			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
 			this->настройкиToolStripMenuItem->Text = L"Настройки";
@@ -143,20 +152,11 @@ namespace Project5 {
 			// LB_СписокДел
 			// 
 			this->LB_СписокДел->FormattingEnabled = true;
-			this->LB_СписокДел->Location = System::Drawing::Point(416, 27);
+			this->LB_СписокДел->Location = System::Drawing::Point(429, 27);
 			this->LB_СписокДел->Name = L"LB_СписокДел";
-			this->LB_СписокДел->Size = System::Drawing::Size(326, 407);
+			this->LB_СписокДел->Size = System::Drawing::Size(369, 602);
 			this->LB_СписокДел->TabIndex = 4;
 			this->LB_СписокДел->Visible = false;
-			// 
-			// LB_Настройки
-			// 
-			this->LB_Настройки->FormattingEnabled = true;
-			this->LB_Настройки->Location = System::Drawing::Point(778, 27);
-			this->LB_Настройки->Name = L"LB_Настройки";
-			this->LB_Настройки->Size = System::Drawing::Size(326, 407);
-			this->LB_Настройки->TabIndex = 5;
-			this->LB_Настройки->Visible = false;
 			// 
 			// btn_Заметки
 			// 
@@ -167,16 +167,32 @@ namespace Project5 {
 			this->btn_Заметки->TabIndex = 6;
 			this->btn_Заметки->Text = L"+";
 			this->btn_Заметки->UseVisualStyleBackColor = true;
+			this->btn_Заметки->Visible = false;
+			this->btn_Заметки->Click += gcnew System::EventHandler(this, &MyForm::btn_Заметки_Click);
 			// 
 			// btn_СписокДел
 			// 
 			this->btn_СписокДел->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25.25F));
-			this->btn_СписокДел->Location = System::Drawing::Point(678, 374);
+			this->btn_СписокДел->Location = System::Drawing::Point(732, 568);
 			this->btn_СписокДел->Name = L"btn_СписокДел";
 			this->btn_СписокДел->Size = System::Drawing::Size(50, 50);
 			this->btn_СписокДел->TabIndex = 7;
 			this->btn_СписокДел->Text = L"+";
 			this->btn_СписокДел->UseVisualStyleBackColor = true;
+			this->btn_СписокДел->Visible = false;
+			this->btn_СписокДел->Click += gcnew System::EventHandler(this, &MyForm::btn_СписокДел_Click);
+			// 
+			// цветToolStripMenuItem
+			// 
+			this->цветToolStripMenuItem->Name = L"цветToolStripMenuItem";
+			this->цветToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->цветToolStripMenuItem->Text = L"Цвет фона";
+			// 
+			// цветТекстаToolStripMenuItem
+			// 
+			this->цветТекстаToolStripMenuItem->Name = L"цветТекстаToolStripMenuItem";
+			this->цветТекстаToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->цветТекстаToolStripMenuItem->Text = L"Цвет текста";
 			// 
 			// MyForm
 			// 
@@ -185,7 +201,6 @@ namespace Project5 {
 			this->ClientSize = System::Drawing::Size(1210, 773);
 			this->Controls->Add(this->btn_СписокДел);
 			this->Controls->Add(this->btn_Заметки);
-			this->Controls->Add(this->LB_Настройки);
 			this->Controls->Add(this->LB_СписокДел);
 			this->Controls->Add(this->LB_Заметки);
 			this->Controls->Add(this->menuStrip1);
@@ -199,11 +214,10 @@ namespace Project5 {
 
 		}
 #pragma endregion
+	int textBoxIndex = 0;
+	int CheckBoxIndex = 0;
 private: textBox_Appear();
 private: CheckBox_Appear();
-private: LB_Заметки_Visible();
-private: LB_СписокДел_Visible();
-private: LB_Настройки_Visible();
 
 
 private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
@@ -211,9 +225,12 @@ private: System::Void менюToolStripMenuItem_Click(System::Object^ sender, Sy
 private: System::Void ЗаметкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void настройкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-
+private: System::Void btn_Заметки_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void btn_СписокДел_Click(System::Object^ sender, System::EventArgs^ e);
 
 private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	   }
+
+
 };
 }
