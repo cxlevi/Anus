@@ -12,78 +12,68 @@ int main(array<String^>^ args) { // Точка входа в приложени�
     Application::Run(% form); // Запускает приложение и запускает основной цикл обработки сообщений для указанной формы  
 }
 
-Project5::MyForm::MyForm(void)
-{
-    throw gcnew System::NotImplementedException();
-}
-
 Project5::MyForm::MyForm(void) {
 
     InitializeComponent();
 
 }
 
- void::Project5::MyForm::textBox_Appear() {
-     //Создание нового экземпляра TextBox
-     TextBox^ newTextBox = gcnew TextBox();
+void Project5::MyForm::textBox_Appear() {
+    //Создание нового экземпляра TextBox
+    TextBox^ newTextBox = gcnew TextBox();
 
-     // Назначение уникального имени TextBox
-     newTextBox->Name = "textBox" + textBoxIndex;
-     textBoxIndex++;
+    // Назначение уникального имени TextBox
+    newTextBox->Name = "textBox" + textBoxIndex;
+    textBoxIndex++;
 
-     // Назначение позиции и размера TextBox
-     newTextBox->Location = System::Drawing::Point(10, 10 + (25 * textBoxIndex));
-     newTextBox->Size = System::Drawing::Size(100, 20);
+    // Назначение позиции и размера TextBox
+    newTextBox->Location = System::Drawing::Point(10, 10 + (25 * textBoxIndex));
+    newTextBox->Size = System::Drawing::Size(100, 20);
 
-     // Добавление TextBox на панель
-     LB_Заметки->Controls->Add(newTextBox);
+    // Добавление TextBox на панель
+    LB_Заметки->Controls->Add(newTextBox);
 }
- void::Project5::MyForm::CheckBox_Appear() {
+void Project5::MyForm::CheckBox_Appear() {
 
-     CheckBox^ newCheckBox = gcnew CheckBox();
+    CheckBox^ newCheckBox = gcnew CheckBox();
 
-     newCheckBox->Name = "textBox" + CheckBoxIndex;
-     CheckBoxIndex++;
+    newCheckBox->Name = "textBox" + CheckBoxIndex;
+    CheckBoxIndex++;
 
-     newCheckBox->Location = System::Drawing::Point(10, 10 + (25 * textBoxIndex));
-     newCheckBox->Size = System::Drawing::Size(100, 20);
+    newCheckBox->Location = System::Drawing::Point(10, 10 + (25 * textBoxIndex));
+    newCheckBox->Size = System::Drawing::Size(100, 20);
 
-     LB_СписокДел->Controls->Add(newCheckBox);
-     
- }
+    LB_СписокДел->Controls->Add(newCheckBox);
+
+}
 
 
- System::Void Project5::MyForm::выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-
- }
+System::Void Project5::MyForm::выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+    Application::Exit();
+}
 System::Void Project5::MyForm::менюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
 }
 System::Void Project5::MyForm::ЗаметкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-
+  
+    LB_Заметки->Visible = true;
+    btn_Заметки->Visible = true;
+    LB_СписокДел->Visible = false;
+    btn_СписокДел->Visible = false;
 }
- System::Void Project5::MyForm::СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-
+System::Void Project5::MyForm::СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+   
+     LB_СписокДел->Visible = true;
+     btn_СписокДел->Visible = true;
+     LB_Заметки->Visible = false;
+     btn_Заметки->Visible = false;
 }
 System::Void Project5::MyForm::настройкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-
+   
 }
 System::Void Project5::MyForm::btn_Заметки_Click(System::Object^ sender, System::EventArgs^ e) {
-    textBox_Appear();
+    void textBox_Appear();
 }
 System::Void Project5::MyForm::btn_СписокДел_Click(System::Object^ sender, System::EventArgs^ e) {
-    CheckBox_Appear();
-}
-
-System::Void Project5::MyForm::красныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
-}
-System::Void Project5::MyForm::желтыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
-}
-System::Void Project5::MyForm::зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
-}
-System::Void Project5::MyForm::синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
-}
-System::Void Project5::MyForm::черныйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
-}
-System::Void Project5::MyForm::белыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e){
+    void CheckBox_Appear();
 }
