@@ -334,7 +334,6 @@ private: System::Windows::Forms::Label^ label3;
 			this->менюToolStripMenuItem->Name = L"менюToolStripMenuItem";
 			this->менюToolStripMenuItem->Size = System::Drawing::Size(53, 20);
 			this->менюToolStripMenuItem->Text = L"Меню";
-			this->менюToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::менюToolStripMenuItem_Click);
 			// 
 			// ЗаметкиToolStripMenuItem
 			// 
@@ -359,7 +358,7 @@ private: System::Windows::Forms::Label^ label3;
 			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
 			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
 			this->настройкиToolStripMenuItem->Text = L"Настройки";
-			this->настройкиToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::настройкиToolStripMenuItem_Click);
+			
 			// 
 			// изменитьФонToolStripMenuItem
 			// 
@@ -1217,18 +1216,12 @@ private: System::Windows::Forms::Label^ label3;
 
 		}
 #pragma endregion
-		int textBoxIndex = 0;
-		int CheckBoxIndex = 0;
-	private: void textBox_Appear();
-	private: void CheckBox_Appear();
+		
 
 	private: System::Void выходToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void менюToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void ЗаметкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void настройкиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void btn_Заметки_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void btn_СписокДел_Click(System::Object^ sender, System::EventArgs^ e);
+	
 
 	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void checkBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e);
