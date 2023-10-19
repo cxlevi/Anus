@@ -117,55 +117,59 @@ namespace Project5 {
 
 
 	private: System::Windows::Forms::CheckBox^ checkBox5;
-private: System::Windows::Forms::CheckBox^ checkBox16;
+	private: System::Windows::Forms::CheckBox^ checkBox16;
 
-private: System::Windows::Forms::CheckBox^ checkBox15;
-
-
+	private: System::Windows::Forms::CheckBox^ checkBox15;
 
 
 
-private: System::Windows::Forms::CheckBox^ checkBox14;
 
 
-private: System::Windows::Forms::CheckBox^ checkBox13;
+	private: System::Windows::Forms::CheckBox^ checkBox14;
 
 
-private: System::Windows::Forms::CheckBox^ checkBox12;
+	private: System::Windows::Forms::CheckBox^ checkBox13;
 
 
-private: System::Windows::Forms::CheckBox^ checkBox11;
+	private: System::Windows::Forms::CheckBox^ checkBox12;
 
 
-private: System::Windows::Forms::CheckBox^ checkBox10;
+	private: System::Windows::Forms::CheckBox^ checkBox11;
 
 
-private: System::Windows::Forms::CheckBox^ checkBox9;
+	private: System::Windows::Forms::CheckBox^ checkBox10;
+
+
+	private: System::Windows::Forms::CheckBox^ checkBox9;
 
 
 
-private: System::Windows::Forms::PictureBox^ pictureBox1;
-private: System::Windows::Forms::PictureBox^ pictureBox2;
-private: System::Windows::Forms::PictureBox^ pictureBox3;
-private: System::Windows::Forms::PictureBox^ pictureBox4;
-private: System::Windows::Forms::PictureBox^ pictureBox5;
-private: System::Windows::Forms::PictureBox^ pictureBox6;
-private: System::Windows::Forms::PictureBox^ pictureBox7;
-private: System::Windows::Forms::PictureBox^ pictureBox8;
-private: System::Windows::Forms::PictureBox^ pictureBox9;
-private: System::Windows::Forms::PictureBox^ pictureBox10;
-private: System::Windows::Forms::PictureBox^ pictureBox11;
-private: System::Windows::Forms::PictureBox^ pictureBox12;
-private: System::Windows::Forms::PictureBox^ pictureBox13;
-private: System::Windows::Forms::PictureBox^ pictureBox14;
-private: System::Windows::Forms::PictureBox^ pictureBox15;
-private: System::Windows::Forms::PictureBox^ pictureBox16;
-private: System::Windows::Forms::ToolStripMenuItem^ изменитьФонToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ красныйToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ зеленыйToolStripMenuItem;
-private: System::Windows::Forms::ToolStripMenuItem^ синийToolStripMenuItem;
-private: System::Windows::Forms::Label^ label1;
-private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
+	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::PictureBox^ pictureBox6;
+	private: System::Windows::Forms::PictureBox^ pictureBox7;
+	private: System::Windows::Forms::PictureBox^ pictureBox8;
+	private: System::Windows::Forms::PictureBox^ pictureBox9;
+	private: System::Windows::Forms::PictureBox^ pictureBox10;
+	private: System::Windows::Forms::PictureBox^ pictureBox11;
+	private: System::Windows::Forms::PictureBox^ pictureBox12;
+	private: System::Windows::Forms::PictureBox^ pictureBox13;
+	private: System::Windows::Forms::PictureBox^ pictureBox14;
+	private: System::Windows::Forms::PictureBox^ pictureBox15;
+	private: System::Windows::Forms::PictureBox^ pictureBox16;
+	private: System::Windows::Forms::ToolStripMenuItem^ изменитьФонToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ красныйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ зеленыйToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ синийToolStripMenuItem;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label2;
+private: System::Windows::Forms::ToolStripMenuItem^ изменитьЗаднийФонToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ RedToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ GreenToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ BlueToolStripMenuItem1;
 
 
 
@@ -266,6 +270,10 @@ private: System::Windows::Forms::Label^ label2;
 			this->pictureBox16 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->изменитьЗаднийФонToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->RedToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->GreenToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->BlueToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -329,20 +337,23 @@ private: System::Windows::Forms::Label^ label2;
 			// ЗаметкиToolStripMenuItem
 			// 
 			this->ЗаметкиToolStripMenuItem->Name = L"ЗаметкиToolStripMenuItem";
-			this->ЗаметкиToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->ЗаметкиToolStripMenuItem->Size = System::Drawing::Size(137, 22);
 			this->ЗаметкиToolStripMenuItem->Text = L"Заметки";
 			this->ЗаметкиToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ЗаметкиToolStripMenuItem_Click);
 			// 
 			// СписокДелToolStripMenuItem
 			// 
 			this->СписокДелToolStripMenuItem->Name = L"СписокДелToolStripMenuItem";
-			this->СписокДелToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->СписокДелToolStripMenuItem->Size = System::Drawing::Size(137, 22);
 			this->СписокДелToolStripMenuItem->Text = L"Список дел";
 			this->СписокДелToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::СписокДелToolStripMenuItem_Click);
 			// 
 			// настройкиToolStripMenuItem
 			// 
-			this->настройкиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->изменитьФонToolStripMenuItem });
+			this->настройкиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->изменитьФонToolStripMenuItem,
+					this->изменитьЗаднийФонToolStripMenuItem
+			});
 			this->настройкиToolStripMenuItem->Name = L"настройкиToolStripMenuItem";
 			this->настройкиToolStripMenuItem->Size = System::Drawing::Size(79, 20);
 			this->настройкиToolStripMenuItem->Text = L"Настройки";
@@ -355,27 +366,27 @@ private: System::Windows::Forms::Label^ label2;
 					this->зеленыйToolStripMenuItem, this->синийToolStripMenuItem
 			});
 			this->изменитьФонToolStripMenuItem->Name = L"изменитьФонToolStripMenuItem";
-			this->изменитьФонToolStripMenuItem->Size = System::Drawing::Size(154, 22);
+			this->изменитьФонToolStripMenuItem->Size = System::Drawing::Size(195, 22);
 			this->изменитьФонToolStripMenuItem->Text = L"Изменить фон";
 			// 
 			// красныйToolStripMenuItem
 			// 
 			this->красныйToolStripMenuItem->Name = L"красныйToolStripMenuItem";
-			this->красныйToolStripMenuItem->Size = System::Drawing::Size(123, 22);
+			this->красныйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->красныйToolStripMenuItem->Text = L"Красный";
 			this->красныйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::красныйToolStripMenuItem_Click);
 			// 
 			// зеленыйToolStripMenuItem
 			// 
 			this->зеленыйToolStripMenuItem->Name = L"зеленыйToolStripMenuItem";
-			this->зеленыйToolStripMenuItem->Size = System::Drawing::Size(123, 22);
+			this->зеленыйToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->зеленыйToolStripMenuItem->Text = L"Зеленый";
 			this->зеленыйToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::зеленыйToolStripMenuItem_Click);
 			// 
 			// синийToolStripMenuItem
 			// 
 			this->синийToolStripMenuItem->Name = L"синийToolStripMenuItem";
-			this->синийToolStripMenuItem->Size = System::Drawing::Size(123, 22);
+			this->синийToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->синийToolStripMenuItem->Text = L"Синий";
 			this->синийToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::синийToolStripMenuItem_Click);
 			// 
@@ -1056,6 +1067,37 @@ private: System::Windows::Forms::Label^ label2;
 			this->label2->Text = L"Список дел";
 			this->label2->Visible = false;
 			// 
+			// изменитьЗаднийФонToolStripMenuItem
+			// 
+			this->изменитьЗаднийФонToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->RedToolStripMenuItem,
+					this->GreenToolStripMenuItem, this->BlueToolStripMenuItem1
+			});
+			this->изменитьЗаднийФонToolStripMenuItem->Name = L"изменитьЗаднийФонToolStripMenuItem";
+			this->изменитьЗаднийФонToolStripMenuItem->Size = System::Drawing::Size(195, 22);
+			this->изменитьЗаднийФонToolStripMenuItem->Text = L"Изменить задний фон";
+			// 
+			// RedToolStripMenuItem
+			// 
+			this->RedToolStripMenuItem->Name = L"RedToolStripMenuItem";
+			this->RedToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->RedToolStripMenuItem->Text = L"Красный";
+			this->RedToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::RedToolStripMenuItem_Click);
+			// 
+			// GreenToolStripMenuItem
+			// 
+			this->GreenToolStripMenuItem->Name = L"GreenToolStripMenuItem";
+			this->GreenToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->GreenToolStripMenuItem->Text = L"Зеленый";
+			this->GreenToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::GreenToolStripMenuItem_Click);
+			// 
+			// BlueToolStripMenuItem1
+			// 
+			this->BlueToolStripMenuItem1->Name = L"BlueToolStripMenuItem1";
+			this->BlueToolStripMenuItem1->Size = System::Drawing::Size(180, 22);
+			this->BlueToolStripMenuItem1->Text = L"Синий";
+			this->BlueToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::BlueToolStripMenuItem1_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -1066,7 +1108,6 @@ private: System::Windows::Forms::Label^ label2;
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->pictureBox2);
-			this->Controls->Add(this->textBox17);
 			this->Controls->Add(this->pictureBox16);
 			this->Controls->Add(this->pictureBox15);
 			this->Controls->Add(this->pictureBox14);
@@ -1081,21 +1122,6 @@ private: System::Windows::Forms::Label^ label2;
 			this->Controls->Add(this->pictureBox5);
 			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox3);
-			this->Controls->Add(this->textBox32);
-			this->Controls->Add(this->textBox33);
-			this->Controls->Add(this->textBox34);
-			this->Controls->Add(this->textBox35);
-			this->Controls->Add(this->textBox28);
-			this->Controls->Add(this->textBox29);
-			this->Controls->Add(this->textBox30);
-			this->Controls->Add(this->textBox31);
-			this->Controls->Add(this->textBox24);
-			this->Controls->Add(this->textBox25);
-			this->Controls->Add(this->textBox26);
-			this->Controls->Add(this->textBox27);
-			this->Controls->Add(this->textBox22);
-			this->Controls->Add(this->textBox23);
-			this->Controls->Add(this->textBox21);
 			this->Controls->Add(this->checkBox16);
 			this->Controls->Add(this->checkBox15);
 			this->Controls->Add(this->checkBox14);
@@ -1132,6 +1158,22 @@ private: System::Windows::Forms::Label^ label2;
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->menuStrip1);
+			this->Controls->Add(this->textBox17);
+			this->Controls->Add(this->textBox32);
+			this->Controls->Add(this->textBox33);
+			this->Controls->Add(this->textBox34);
+			this->Controls->Add(this->textBox35);
+			this->Controls->Add(this->textBox28);
+			this->Controls->Add(this->textBox29);
+			this->Controls->Add(this->textBox30);
+			this->Controls->Add(this->textBox31);
+			this->Controls->Add(this->textBox24);
+			this->Controls->Add(this->textBox25);
+			this->Controls->Add(this->textBox26);
+			this->Controls->Add(this->textBox27);
+			this->Controls->Add(this->textBox22);
+			this->Controls->Add(this->textBox23);
+			this->Controls->Add(this->textBox21);
 			this->Controls->Add(this->LB_Заметки);
 			this->Controls->Add(this->LB_СписокДел);
 			this->MainMenuStrip = this->menuStrip1;
@@ -1193,12 +1235,16 @@ private: System::Windows::Forms::Label^ label2;
 	private: System::Void зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
+	private: System::Void RedToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void GreenToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void BlueToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e);
 
 
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 
-private: System::Void pictureBox17_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+	private: System::Void pictureBox17_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	
 };
 }
