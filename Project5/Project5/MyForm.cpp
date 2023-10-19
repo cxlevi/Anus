@@ -58,6 +58,8 @@ System::Void Project5::MyForm::ЗаметкиToolStripMenuItem_Click(System::Obj
 
     label1->Visible = true;
     label2->Visible = false;
+    label3->Visible = false;
+
 
     LB_Заметки->Visible = true;
     LB_СписокДел->Visible = false;
@@ -117,6 +119,7 @@ System::Void Project5::MyForm::ЗаметкиToolStripMenuItem_Click(System::Obj
 }
 System::Void Project5::MyForm::СписокДелToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 
+    label3->Visible = false;
     label2->Visible = true;
     label1->Visible = false;
 
@@ -323,19 +326,29 @@ System::Void Project5::MyForm::красныйToolStripMenuItem_Click(System::Obj
     LB_СписокДел->BackColor = Color::Red;
     label1->BackColor = Color::Red;
     label2->BackColor = Color::Red;
-    BackColor = Color::Red;
+    
 }
-    System::Void Project5::MyForm::зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-        LB_Заметки->BackColor = Color::Green;
-        LB_СписокДел->BackColor = Color::Green;
-        label1->BackColor = Color::Green;
-        label2->BackColor = Color::Green;
+System::Void Project5::MyForm::зеленыйToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+    LB_Заметки->BackColor = Color::Green;
+    LB_СписокДел->BackColor = Color::Green;
+    label1->BackColor = Color::Green;
+    label2->BackColor = Color::Green;
+    
+}
+System::Void Project5::MyForm::синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+    LB_Заметки->BackColor = Color::Blue;
+    LB_СписокДел->BackColor = Color::Blue;
+    label1->BackColor = Color::Blue;
+    label2->BackColor = Color::Blue;
+    
+}
+    System::Void Project5::MyForm::RedToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
         BackColor = Color::Red;
     }
-    System::Void Project5::MyForm::синийToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-        LB_Заметки->BackColor=Color::Blue;
-        LB_СписокДел-> BackColor = Color::Blue;
-        label1->BackColor = Color::Blue;
-        label2->BackColor = Color::Blue;
-        BackColor = Color::Red;
+    System::Void Project5::MyForm::GreenToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+        BackColor = Color::Green;
     }
+    System::Void Project5::MyForm::BlueToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+        BackColor = Color::Blue;
+    }
+
